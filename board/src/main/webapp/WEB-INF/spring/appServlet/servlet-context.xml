@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd 
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/mvc">
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+
+	<annotation-driven />
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+
+	<resources location="/resources/" mapping="/resources/**" />
+	<resources location="/css/" mapping="/css/**" />
+	<resources location="/img/" mapping="/img/**" />
+	<resources location="/js/" mapping="/js/**" />
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+
+	<beans:bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property value="/WEB-INF/views/" name="prefix" />
+		<beans:property value=".jsp" name="suffix" />
+		<beans:property value="1" name="order"/>
+	</beans:bean>
+	
+	<!-- BeanNmaeViewResolver 설정 -->
+	<beans:bean class="org.springframework.web.servlet.view.BeanNameViewResolver" >
+		<beans:property name="order" value="0"/>
+	</beans:bean>
+	
+	<!-- 파일 다운로드를 처리;할 클래스를 빈(bean)으로 등록 -->
+	<beans:bean id ="fileDownloadUtil" class ="com.spring.board.common.FileDownloadUtil" />
+	
+	<context:component-scan base-package="com.spring.board" use-default-filters = "false" >
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<beans:bean
+				class="com.spring.board.common.LoggerInterceptor"
+				id="loggerInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<beans:bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+	
+	<!-- Multipart을 사용하기 위해 MultipartResolver를 추가함  // MultipartResolver는 CommonsMultipartResolver이므로 multipartResolver로 빈이름을 등록 함-->
+	<beans:bean id = "multipartResolver" class = "org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- MaxUploadSize - 한번에 최대 올릴 수 있는 파일 사이즈
+		     MaxInMemorySize - 해당 경로에 최대로 저장할 수 있는 파일 사이즈  -->
+		<beans:property name = "maxUploadSize" value = "100000000" />
+		<beans:property name="maxInMemorySize" value = "100000000" />
+	</beans:bean>
+	
+</beans:beans>
