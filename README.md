@@ -41,8 +41,10 @@
 </br>
 </br>
 </br>
+
 ## 사용언어
- - ``HTML/CSS`` | ``Javascript`` | ``JQuery`` | ``Java`` | ``Apache`` | ``MySQL`` | ``JSP``  
+
+ - : ``HTML/CSS`` | ``Javascript`` | ``JQuery`` | ``Java`` | ``Apache`` | ``MySQL`` | ``JSP``  
  
 </br>
 </br>
