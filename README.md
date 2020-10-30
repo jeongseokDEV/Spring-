@@ -7,31 +7,31 @@
 
 <div>
  
-### 게시글 리스트
+### 게시글 리스트  -- 상세 https://simpleu.tistory.com/12
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337450-3d1de000-10c2-11eb-8443-0d4bf54f85d5.PNG">
    </br>
    
-### 게시글 상세보기
+### 게시글 상세보기 -- 상세 https://simpleu.tistory.com/13
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337449-3d1de000-10c2-11eb-9f5f-273730df3dce.PNG">
  </br>
  
-### 게시글 작성하기
+### 게시글 작성하기 -- 상세 https://simpleu.tistory.com/15
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337447-3c854980-10c2-11eb-81d6-7b220c27c7df.PNG">
  </br>
  
-### 게시글 삭제
+### 게시글 삭제 -- 상세 https://simpleu.tistory.com/16
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337445-3becb300-10c2-11eb-913b-a1283537db50.PNG">
  </br>
 
-### 게시글 수정
+### 게시글 수정 -- 상세 https://simpleu.tistory.com/16
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337444-3b541c80-10c2-11eb-8964-1d8ddc2575f2.PNG">
  </br>
 
-### 게시글 답변
+### 게시글 답변 -- 상세https://simpleu.tistory.com/14
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337448-3c854980-10c2-11eb-91b8-d8e63bb1bcb5.PNG">
  </br>
 
-### 게시글 파일업로드
+### 게시글 파일업로드 -- 상세 https://simpleu.tistory.com/17
  <img width="600" src="https://user-images.githubusercontent.com/46414224/96337443-3a22ef80-10c2-11eb-86ca-78640b434757.PNG">
  </br>
 
