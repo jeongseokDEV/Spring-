@@ -6,26 +6,30 @@
 ## 프로젝트 실행화면
 
 <div>
-   //게시글 리스트
- <img width="840" src="https://user-images.githubusercontent.com/46414224/96337450-3d1de000-10c2-11eb-8443-0d4bf54f85d5.PNG">
+### 게시글 리스트
+ <img width="400" src="https://user-images.githubusercontent.com/46414224/96337450-3d1de000-10c2-11eb-8443-0d4bf54f85d5.PNG">
+   </br>
+### 게시글 상세보기
+ <img width="400" src="https://user-images.githubusercontent.com/46414224/96337449-3d1de000-10c2-11eb-9f5f-273730df3dce.PNG">
+ </br>
+### 게시글 작성하기
+ <img width="400" src="https://user-images.githubusercontent.com/46414224/96337447-3c854980-10c2-11eb-81d6-7b220c27c7df.PNG">
+ </br>
+### 게시글 삭제
+ <img width="400" src="https://user-images.githubusercontent.com/46414224/96337445-3becb300-10c2-11eb-913b-a1283537db50.PNG">
+ </br>
 
-   //게시글 상세
- <img width="840" src="https://user-images.githubusercontent.com/46414224/96337449-3d1de000-10c2-11eb-9f5f-273730df3dce.PNG">
+### 게시글 수정
+ <img width="400" src="(https://user-images.githubusercontent.com/46414224/96337444-3b541c80-10c2-11eb-8964-1d8ddc2575f2.PNG">
+ </br>
 
-  //게시글 작성
- <img width="840" src="https://user-images.githubusercontent.com/46414224/96337447-3c854980-10c2-11eb-81d6-7b220c27c7df.PNG">
+### 게시글 답변
+ <img width="400" src="https://user-images.githubusercontent.com/46414224/96337448-3c854980-10c2-11eb-91b8-d8e63bb1bcb5.PNG">
+ </br>
 
-  //게시글 삭제
- <img width="840" src="https://user-images.githubusercontent.com/46414224/96337445-3becb300-10c2-11eb-913b-a1283537db50.PNG">
-
-  //게시글 수정
- <img width="840" src="(https://user-images.githubusercontent.com/46414224/96337444-3b541c80-10c2-11eb-8964-1d8ddc2575f2.PNG">
-
-  //게시글 답변
- <img width="840" src="https://user-images.githubusercontent.com/46414224/96337448-3c854980-10c2-11eb-91b8-d8e63bb1bcb5.PNG">
-
-  //게시글 파일 업로드
- <img width="840" src="https://user-images.githubusercontent.com/46414224/96337443-3a22ef80-10c2-11eb-86ca-78640b434757.PNG">
+### 게시글 파일업로드
+ <img width="400" src="https://user-images.githubusercontent.com/46414224/96337443-3a22ef80-10c2-11eb-86ca-78640b434757.PNG">
+ </br>
 
 
 </div>  
@@ -33,6 +37,7 @@
 </br>
 </br>
 </br>
+
 ## 프로젝트 기능 소개
 - 프로젝트의 기능으로는 게시판의 기본 기능인 CRUD 부터 답변 기능, 파일 업로드, 파일 다운로드, 페이징 처리 까지 여러 기능을 구현하였습니다.
 - Mybatis를 사용하여 따로 mapper를 두어 Dao에서 필요한 SQL문만 불러와 사용할 수 있도록 하였습니다.
