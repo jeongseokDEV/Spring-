@@ -24,7 +24,7 @@
  </br>
 
 ### 게시글 수정
- <img width="600" src="(https://user-images.githubusercontent.com/46414224/96337444-3b541c80-10c2-11eb-8964-1d8ddc2575f2.PNG">
+ <img width="600" src="https://user-images.githubusercontent.com/46414224/96337444-3b541c80-10c2-11eb-8964-1d8ddc2575f2.PNG">
  </br>
 
 ### 게시글 답변
